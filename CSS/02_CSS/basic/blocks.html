@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .menu {
+            width: 15em;
+            float: left;
+            background-color: rgba(63, 74, 71);
+        }
+
+        .content {
+            background-color: rgb(126, 109, 109);
+            margin-bottom: 1em;
+        }
+
+        .mail {
+            float: right;
+        }
+
+        .footer {
+            clear: both;
+            background-color: rgba(255, 0, 212);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .osn {
+            background-color: rgb(206, 194, 194);
+            margin-bottom: 1em;
+        }
+
+        .wrap {
+            background-color: rgb(126, 109, 109);
+            margin-left: 240px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="osn">
+        <div class="menu">
+            <p>Блок навигации</p>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую
+                    статью. как показано в данном примере</li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <p>Статья 1</p>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin
+            bottom
+
+        </div>
+        <div class="wrap">
+            <div class="content">
+                <p>Статья 2</p>
+                Размер блока:<br>
+                Занимает всю ДОСТУПНУЮ Ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin bottom.
+                Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой
+                картинки.
+            </div>
+
+
+            <div class="mail"><img src="mail.png" alt=""></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь
+        контентом.
+    </div>
+
+
+</body>
+
+</html>
