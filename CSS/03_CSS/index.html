@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div.MenuLevel1 {display:flex;}
+        div.MenuLevel1 > div {background-color: rgb(171, 171, 181); border-radius: 5px;border: solid rgb(37, 31, 31) 1px; position: relative; cursor: pointer;width: 90px;}
+        div.MenuLevel2 {width:90px; display: none ; }
+        div.MenuLevel2 > div { background-color: rgb(171, 171, 181); border: solid rgb(37, 31, 31) 1px; cursor: pointer ;border-radius: 5px;}
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position:absolute; z-index: 1;}
+    
+        @media all and (max-width:560px){
+
+     div.MenuLevel1 { width: 100px;display:inline-block;}
+        div.MenuLevel1 > div { background-color: rgb(171, 171, 181); border-radius: 5px;border: solid rgb(37, 31, 31) 1px; position: relative; cursor: pointer }
+        div.MenuLevel2 {width: 150px; display: none ;}
+        div.MenuLevel2 > div { background-color: rgb(171, 171, 181); border: solid rgb(37, 31, 31) 1px; cursor: pointer ;border-radius: 5px;}
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position:absolute; z-index: 1 ; left:100%;top:0%;}}
+       
+    </style>
+
+</head>
+<body>
+    <div class='MenuLevel1'>
+        <div>Понедельник</div>
+        <div class="a">
+           Вторник
+            <div class='MenuLevel2' >
+            
+                <div>Завтрак </div>
+                <div>Обед</div>
+                <div >Ужин</div>
+           
+            </div>
+        </div>
+        <div class="a">
+            Среда
+            <div class='MenuLevel2'>
+                <div >Завтрак </div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Четверг</div>
+        <div>Пятница</div>
+        <div>Суббота</div>
+    
+    </div>
+    
+    
+    
+</body>
+</html>
